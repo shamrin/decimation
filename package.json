@@ -1,0 +1,70 @@
+{
+  "name": "decimation",
+  "version": "0.1.4",
+  "description": "Natural math notation library for JavaScript decimals",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shamrin/decimation.git"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/core.d.ts",
+      "import": "./src/core.js"
+    },
+    "./prisma": {
+      "types": "./dist/prisma.d.ts",
+      "import": "./src/prisma.js"
+    },
+    "./decimal.js": {
+      "types": "./dist/decimal.d.ts",
+      "import": "./src/decimal.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test",
+    "test:watch": "node --test --watch",
+    "bench": "node benchmark.js",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix"
+  },
+  "keywords": [
+    "math",
+    "decimal",
+    "prisma",
+    "decimal.js"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@prisma/client": "^5.0.0",
+    "decimal.js": "^10.4.3",
+    "oxlint": "^1.43.0",
+    "prettier": "^3.8.1",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "@prisma/client": ">=4.0.0",
+    "decimal.js": ">=10.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@prisma/client": {
+      "optional": true
+    },
+    "decimal.js": {
+      "optional": true
+    }
+  },
+  "volta": {
+    "node": "24.12.0"
+  }
+}
