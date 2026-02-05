@@ -155,6 +155,11 @@ npm run format:check
 npm publish
 ```
 
+## Roadmap
+
+* Expression and argument types linter
+* Refactoring tool
+
 [decimal.js]: https://www.npmjs.com/package/decimal.js
 [Prisma Decimal]: https://www.prisma.io/docs/orm/prisma-client/special-fields-and-types#working-with-decimal
 [dsum]: https://github.com/MikeMcl/decimal.js/issues/207
