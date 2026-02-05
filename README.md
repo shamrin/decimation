@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://placehold.co/600x400/151b23/ffffff?text=Dark+Mode+Active">
+  <source media="(prefers-color-scheme: light)" srcset="https://placehold.co/600x400/ffffff/111827?text=Light+Mode+Active">
+  <img alt="Themed Screenshot Placeholder" src="https://placehold.co/600x400/ffffff/111827?text=Light+Mode+Active">
+</picture>
+
 # decimation
 
 Natural math notation library for JavaScript decimals, using tagged templates:
